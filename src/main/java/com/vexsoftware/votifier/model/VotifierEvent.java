@@ -1,6 +1,6 @@
 package com.vexsoftware.votifier.model;
 
-import org.spongepowered.api.event.AbstractEvent;
+import org.spongepowered.api.event.impl.AbstractEvent;
 
 /**
  * {@code VotifierEvent} is a custom Bukkit event class that is sent
