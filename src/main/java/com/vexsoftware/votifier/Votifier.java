@@ -40,6 +40,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongepowered.api.Game;
 import org.spongepowered.api.Server;
+import org.spongepowered.api.Sponge;
 import org.spongepowered.api.event.Listener;
 import org.spongepowered.api.event.game.state.GameInitializationEvent;
 import org.spongepowered.api.event.game.state.GamePreInitializationEvent;
@@ -105,7 +106,7 @@ public class Votifier {
 
     @Listener
     public void onInit(GameInitializationEvent event) throws IOException {
-        game = event.getGame();
+        game = Sponge.getGame();
         server = game.getServer();
         ConfigurationNode cfg;
         
